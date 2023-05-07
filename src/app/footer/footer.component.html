@@ -6,9 +6,9 @@
     Надішліть заявку і ми зв’яжемось з Вами в найближчу вільну хвилину з 10:00 до 21:00
   </div>
   <div class="footer--buttons">
-    <textarea class="footer--text">Ваше ім’я</textarea>
-    <textarea class="footer--text">+380</textarea>
-    <div class="footer--button">
+    <textarea  placeholder="Ім'я" [(ngModel)]="name"  class="footer--text">Ваше ім’я</textarea>
+    <textarea  placeholder="Номер телефону" [(ngModel)]="phone"  class="footer--text">+380</textarea>
+    <div class="footer--button" (click)="onSubmit()">
       Надіслати
     </div>
   </div>
