@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import url("https://fonts.googleapis.com/css2?family=Oranienbaum");
+*{
+  margin:0;
+  overflow-x: hidden;
+  font-family: 'Oranienbaum', sans-serif;
+  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  white-space: nowrap;
+}

@@ -1,0 +1,26 @@
+<div class="app__navbar">
+  <div class="app__navbar-left" >
+    <div>
+      <a href="" class="route" [ngClass]="{ 'active': isRouteActive('/') }"> Головна</a>
+    </div>
+    <div>
+      <a href="services" class="route" [ngClass]="{ 'active': isRouteActive('/services') }"> Послуги</a>
+    </div>
+    <div>
+      <a href="prices" class="route" [ngClass]="{ 'active': isRouteActive('/prices') }"> Ціни</a>
+    </div>
+  </div>
+  <div class="app__navbar-middle">
+    <div class="app__navbar-middle__logo" >
+      <img ngSrc="../../assets/Logo.png" alt="Logo" height="476" width="922"/>
+    </div>
+  </div>
+  <div class="app__navbar-right">
+    <div>
+      <a href="" class="route">Контакти</a>
+    </div>
+    <div>
+      +38 066 666 66 66
+    </div>
+  </div>
+</div>

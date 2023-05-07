@@ -1,0 +1,16 @@
+<div class="calendar-component">
+  <mat-card-content class="calendar">
+    <div class="centered">
+      <mat-calendar #calendar [selected]="selected" [dateClass]="dateClass" (selectedChange)="onDateSelected($event)"></mat-calendar>
+    <form (submit)="onSubmit()">
+      <mat-form-field>
+        <input matInput placeholder="Ім'я" [(ngModel)]="name" name="name" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="tel" placeholder="Номер телефону" [(ngModel)]="phone" name="phone" required>
+      </mat-form-field>
+      <button mat-icon-button color="primary" type="submit">Записатися</button>
+    </form>
+    </div>
+  </mat-card-content>
+</div>

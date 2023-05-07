@@ -1,0 +1,24 @@
+<div *ngIf="bookedDates.length > 0">
+  <table>
+    <tr>
+      <th>Дата</th>
+      <th>Ім'я</th>
+      <th>Телефон</th>
+      <th>Submit</th>
+    </tr>
+    <tr *ngFor="let booking of bookedDates">
+      <td>{{booking.date | date:'dd/MM/yyyy'}}</td>
+      <td>{{booking.name}}</td>
+      <td>{{booking.phone}}</td>
+      <td>{{booking.accept}}</td>
+      <div>
+        <button *ngIf="!booking.accept" (click)="acceptBooking(booking)">Прийняти</button>
+        <button (click)="rejectBooking(booking)">Відхилити</button>
+      </div>
+    </tr>
+  </table>
+</div>
+<div *ngIf="bookedDates.length === 0">
+  <p>Немає не перевірени</p>
+</div>
+

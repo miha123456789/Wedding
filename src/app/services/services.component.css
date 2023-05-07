@@ -1,0 +1,91 @@
+*{
+  width: 100%;
+}
+.content{
+  width: 100%;
+  overflow-x: hidden;
+  background: #F1EAF0;
+  height: 100%;
+}
+.title{
+  font-size: 35px;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 59px;
+  height: 40px;
+}
+.main{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-top: 122px;
+  margin-bottom: 67px;
+}
+.main__left{
+  margin-left: 4%;
+}
+.main__left div{
+  display: flex;
+  overflow-y: hidden;
+  padding: 0;
+  margin: 0;
+  height: 32px;
+  font-size: 16px;
+  line-height: 29px;
+
+}
+.main__left div span{
+  height: 32px;
+  font-size: 16px;
+  line-height: 29px;
+  padding-left: 21px;
+  white-space: pre-wrap;
+
+}
+.main__left img {
+  height: 29px;
+  width: 29px;
+}
+.main__right{
+  overflow-y: hidden;
+}
+.main__right img{
+  width: 37vw;
+  height: 37vh;
+}
+.buy__button{
+  width: 24vw;
+  height: 70px;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  background: #FB5D8F;
+  border-radius: 15px;
+  text-align: center;
+  justify-content: center;
+  margin-left: 15%;
+  white-space: pre-wrap;
+  margin-top: 69px;
+  overflow: hidden;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .main {
+    display: block;
+  }
+
+  .main__right img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+  }
+
+  .buy__button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+}

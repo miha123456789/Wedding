@@ -1,0 +1,60 @@
+<div class="home-page">
+  <div class="title">
+   Вартсіть наших послуг
+  </div>
+  <div class="wedding">
+    <div class="wedding_text">
+      <h1>Камерне весілля ( до 30 гостей)</h1>
+      <div class="for--span"><span></span>
+        <h3>2 координатори у день весілля та менеджер проекту</h3>
+      </div>
+      <h5>25 000грн.</h5>
+    </div>
+    <div class="wedding_img">
+      <img ngSrc="../../assets/prices1.svg" alt="wedding" height="298" width="555"/>
+    </div>
+  </div>
+
+  <div class="wedding" *ngIf="window.innerWidth>=768; else mobileView">
+    <div class="wedding_text">
+      <img ngSrc="../../assets/prices2.svg" alt="wedding" height="302" width="560"/>
+    </div>
+    <div class="wedding_img">
+      <h1>Весілля у колі сїм'ї та друзів (від 30 до 70 гостей)</h1>
+      <div class="for--span"><span></span>
+        <h3>3 координатори у день весілля та менеджер проекту
+        </h3>
+      </div>
+      <h5>40 000грн.</h5>
+    </div>
+  </div>
+
+  <ng-template #mobileView>
+    <div class="wedding">
+      <div class="wedding_text">
+        <h1>Весілля у колі сїм'ї та друзів (від 30 до 70 гостей)</h1>
+        <div class="for--span"><span></span>
+          <h3>3 координатори у день весілля та менеджер проекту
+          </h3>
+        </div>
+        <h5>40 000грн.</h5>
+      </div>
+      <div class="wedding_img">
+        <img ngSrc="../../assets/prices2.svg" alt="wedding" height="302" width="560"/>
+      </div>
+    </div>
+  </ng-template>
+
+  <div class="wedding">
+    <div class="wedding_text">
+      <h1>Велике весілля (від 70 до 150 гостей)</h1>
+      <div class="for--span"><span></span>
+        <h3>від 4 координаторів у день весілля, адміністратор та менеджер проекту</h3>
+      </div>
+      <h5>55 000грн.</h5>
+    </div>
+    <div class="wedding_img">
+      <img ngSrc="../../assets/prices3.svg" alt="wedding" height="304" width="560"/>
+    </div>
+  </div>
+</div>

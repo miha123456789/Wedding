@@ -1,0 +1,57 @@
+.calendar-component{
+  background: #D9D9D9;
+  height: 400px;
+  overflow: hidden;
+}
+.calendar{
+  width: 50vw;
+  background: white;
+  border:none;
+  height: 300px;
+  margin: 25px auto;
+  border-radius: 8px;
+}
+mat-card-content{
+  display: flex;
+  padding-top: 50px;
+}
+.centered{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+button{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+mat-form-field{
+  display: block;
+  width: 200px;
+}
+.mat-calendar-body-active > .mat-calendar-body-today {
+  color: red;
+  background-color: blue;
+}
+::ng-deep .available .mat-calendar-body-cell-content{
+  background-color: rgba(14, 152, 5, 0.25);
+}
+
+::ng-deep .mat-calendar-controls {
+   display: flex;
+   align-items: center;
+   margin: 5% calc(4.7142857143% - 16px);
+   overflow: hidden;
+ }
+@media screen and (max-width: 768px) {
+  .centered{
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  mat-form-field{
+    width: 100%;
+    display:  block;
+  }
+}

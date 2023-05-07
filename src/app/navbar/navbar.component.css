@@ -1,0 +1,105 @@
+*{
+  width: 100%;
+}
+.app__navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 75px;
+  position: relative;
+  background: white;
+  font-style: normal;
+}
+
+.app__navbar-left{
+  height: 100%;
+  display: flex;
+  float:left;
+  overflow-y: hidden;
+  padding-left: 68px;
+}
+.app__navbar-middle{
+  height: 100%;
+  text-align:  center;
+  justify-content: center;
+  overflow-y: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 67px;
+  width: 25%;
+}
+.app__navbar-middle__logo{
+  text-align:  center;
+  min-width: 6ch;
+  height: 37px;
+  line-height: 37px;
+  margin-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-y: hidden;
+}
+.app__navbar-middle__logo img{
+  height: 50px;
+  width: 87px;
+}
+.app__navbar-right{
+  height: 100%;
+  display: flex;
+  overflow-y: hidden;
+  margin-left:auto;
+  justify-content: end;
+}
+.app__navbar-right div,
+.app__navbar-left div{
+  padding-top: 29px;
+  width:auto;
+}
+.app__navbar-left div{
+  padding-left: 33px
+}
+.route{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.app__navbar-right div{
+  padding-right: 29px;
+}
+@media screen and (max-width: 768px) {
+  .app__navbar-middle__logo {
+  margin-top: 2px;
+  }
+  .app__navbar{
+    height: 50px;
+  }
+  .app__navbar-left {
+  padding-left: 0;
+    width: auto;
+  }
+  .app__navbar-middle{
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .app__navbar-left div{
+    padding-left: 5px;
+    padding-top: 16px;
+    width: 15ch;
+  }
+  .app__navbar-left div:last-child {
+    width: 10ch;
+  }
+
+  .app__navbar-right div{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 16px;
+  }
+}
+.active{
+  color: #FF1EC0;
+}
+.route:hover{
+  text-decoration:underline;
+  color: #FF1EC0;
+  background: white;
+}
