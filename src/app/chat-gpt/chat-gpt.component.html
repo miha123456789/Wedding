@@ -1,0 +1,8 @@
+<div class="gptBlock">
+  <h1>Тут ви можете отримати відповідь на будь-яке ваше запитання про весілля</h1>
+  <textarea placeholder="Ваше запитання" [(ngModel)]="sendText" class="gptArea">Ваш запит</textarea>
+  <button (click)="getDataFromOpenAI()">Отримати відповідь</button>
+</div>
+
+<div *ngIf="loading" class="gptWait">ВАШ ЗАПИТ ОБРОБЛЯЄТЬСЯ (Зачекайте декілька секунд)</div>
+<div *ngIf="!loading" class="gptText">{{ gptText }}</div>

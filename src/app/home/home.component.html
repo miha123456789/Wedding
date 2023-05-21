@@ -11,6 +11,7 @@
     </div>
     </div>
   </div>
+  <app-chat-gpt></app-chat-gpt>
   <div class="title">
     Останні Весілля
   </div>
@@ -25,7 +26,7 @@
         <img ngSrc="../../assets/wedding1.svg" alt="wedding" height="298" width="555"/>
       </div>
   </div>
-    <div class="wedding" *ngIf="window.innerWidth>=768; else mobileView">
+  <div class="wedding" *ngIf="window.innerWidth>=768; else mobileView">
       <div class="wedding_text">
         <img ngSrc="../../assets/wedding2.svg" alt="wedding" height="302" width="560"/>
       </div>

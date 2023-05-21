@@ -1,0 +1,58 @@
+.gptBlock{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+button{
+  background: #FB5D8F;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 40px;
+  color: #FFFFFF;
+  width: 207px;
+  text-align: center;
+  height: 40px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  overflow:hidden;
+  border: none;
+}
+.gptBlock h1{
+  line-height: 50px;
+  font-size: 30px;
+}
+.gptArea{
+  resize: none;
+  width: 50%;
+  height: 50px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  padding:6px;
+}
+.gptText{
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  white-space: pre-wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.gptWait{
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

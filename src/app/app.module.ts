@@ -21,6 +21,7 @@ import {MatInputModule} from "@angular/material/input";
 import {MatButtonModule} from "@angular/material/button";
 import { FormsModule } from '@angular/forms';
 import { AdminComponent } from './admin/admin.component';
+import { ChatGPTComponent } from './chat-gpt/chat-gpt.component';
 
 const Routes=[
   {path:'',component:HomeComponent},
@@ -38,7 +39,8 @@ const Routes=[
     HomeComponent,
     PricesComponent,
     CalendarComponent,
-    AdminComponent
+    AdminComponent,
+    ChatGPTComponent
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(Routes), NgOptimizedImage,
