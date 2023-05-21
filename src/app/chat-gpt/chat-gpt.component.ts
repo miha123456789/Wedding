@@ -13,13 +13,13 @@ export class ChatGPTComponent {
   gptText: string = '';
   loading: boolean = false;
   readonly configuration = new Configuration({
-    apiKey: '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' // Replace with your actual OpenAI API key
+    apiKey: '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' // Replace with your actual OpenAI API key
   });
   readonly openai = new OpenAIApi(this.configuration);
 
   constructor() {
     const configuration = new Configuration({
-      apiKey: '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' // Replace with your actual OpenAI API key
+      apiKey: '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' // Replace with your actual OpenAI API key
     });
     this.openai = new OpenAIApi(configuration);
   }
